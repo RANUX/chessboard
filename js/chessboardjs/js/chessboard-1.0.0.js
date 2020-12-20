@@ -35,6 +35,7 @@
   // NOTE: these should never change
   var CSS = {}
   CSS['alpha'] = 'alpha-d2270'
+  CSS['alpha2'] = 'alpha-e4170'
   CSS['black'] = 'black-3c85d'
   CSS['board'] = 'board-b72b1'
   CSS['chessboard'] = 'chessboard-63f37'
@@ -43,6 +44,7 @@
   CSS['highlight2'] = 'highlight2-9c5d2'
   CSS['notation'] = 'notation-322f9'
   CSS['numeric'] = 'numeric-fc462'
+  CSS['numeric2'] = 'numeric-f31a2'
   CSS['piece'] = 'piece-417db'
   CSS['row'] = 'row-5277c'
   CSS['sparePieces'] = 'spare-pieces-7492f'
@@ -828,11 +830,13 @@
             if ((orientation === 'white' && row === 1) ||
                 (orientation === 'black' && row === 8)) {
               html += '<div class="{notation} {alpha}">' + alpha[j] + '</div>'
+              html += '<div class="{notation} {alpha2}">' + alpha[j] + '</div>'
             }
 
             // numeric notation
             if (j === 0) {
               html += '<div class="{notation} {numeric}">' + row + '</div>'
+              html += '<div class="{notation} {numeric2}">' + row + '</div>'
             }
           }
 
